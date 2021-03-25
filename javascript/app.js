@@ -21,7 +21,9 @@ DataTypes :
 
 
 */
+var userName = prompt('what is your name? ');
 
+alert('Welcome ' + userName);
 // 'Hello my name is bashar'
 // "This is a String data type"
 // '  3+3 '
