@@ -17,9 +17,9 @@ colors:
 Float : when you want to float an element to the right or to the left
 
 
-ID : each element can have one ID for example <p id="unique"> <h2 id="anotherid"> <p id =""alsoUnique>
+ID: each element can have one ID for example <p id="unique"> <h2 id="anotherid"> <p id =""alsoUnique>
 
-Class : elements can have the same class <p class="same"><p class="same"><div class="same">
+Classes : elements can have the same class <p class="same"><p class="same"><div class="same">
 
 
 
