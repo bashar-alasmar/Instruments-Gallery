@@ -158,18 +158,6 @@ if(condition){
 // default case i will just tell him to have a nice day ! 
 
 
-// var age = prompt('whats your age?');
-// // 12
-//         // F       // T 
-// if(age >= 18 && age < 35){ // F
-//     alert('Welcome to my website!')
-//     // T  || F 
-// }else if(age < 18 || age > 35){ // T 
-//     alert('Sorry your not allowed!')
-// }else{
-//     alert('Have a nice day!')
-// }
-
 
 
 /* 
@@ -186,18 +174,20 @@ while(condition){
 
 // if the password is not uncommon i wont allow the user to enter my website ! 
 
-// var userPassword = prompt('Guess the password!');
-// var password = 'uncommon';
-
 // // anything !
 //         // anything !== uncommon 
 //  // out of the if statement !
 //             // T   // until the user enter the correct password(uncommon)
 //             //anything !== 'uncommon' T 
-// while(userPassword !== password){ // validation 
-//     userPassword = prompt('Please enter the correct password!')
-//     // we're not assigning the value to anywhere
-// }
+function gettingPassword(){
+var userPassword = prompt('Guess the password!');
+var password = 'uncommon';
+while(userPassword !== password){ // validation 
+    userPassword = prompt('Please enter the correct password!')
+    // we're not assigning the value to anywhere
+}
+}
+gettingPassword()
 // while(userPassword !== password){ // validation 
 //     prompt('Please enter the correct password!')
 //     // we're not assigning the value to anywhere
@@ -223,26 +213,6 @@ while(condition){
 // */
 // var favInstrument = prompt('Whats your favourite instrument!','piano , guitar');
 
-// // guitar
-//         // T  || F 
-//         // T 
-
-// // guitar 
-//                 // T  &&  F 
-//                 //  F 
-                
-// // Bashar          T                 T       
-// while(favInstrument !== 'piano' && favInstrument !== 'guitar'){
-
-//     favInstrument = prompt('please enter on of the following guitar or piano');
-//     // guitar no where ! 
-// }
-// // guitar 
-//                 // F            ||    //      T 
-
-// guitar   // F            &&     // T 
-
-// anything  F             ||      F
  // !F  = > T 
 //  while(!(favInstrument ==='piano' || favInstrument ==='guitar')){ 
 //     favInstrument = prompt('please enter on of the following guitar or piano');
@@ -317,32 +287,98 @@ while(condition){
 
 
 
-var favInstrument = prompt('Whats your favourite instrument!','piano , guitar');
+// var favInstrument = prompt('Whats your favourite instrument!','piano , guitar');
      
-while(favInstrument !== 'piano' && favInstrument !== 'guitar'){
+// while(favInstrument !== 'piano' && favInstrument !== 'guitar'){
 
-    favInstrument = prompt('please enter on of the following guitar or piano');
-}
+//     favInstrument = prompt('please enter on of the following guitar or piano');
+// }
 
-// guitar 
-// how many guitars would you like to see? 
-// 20 images of the guitar!
+// // guitar 
+// // how many guitars would you like to see? 
+// // 20 images of the guitar!
 
 
-var instrumentsNum = prompt('How many guitar or piano would you like to see?');
-// 4 
+// var instrumentsNum = prompt('How many guitar or piano would you like to see?');
+// // 4 
 
-var image = ''; 
+// var image = ''; 
 // undifined
 
 // declaring a variable 
                        // 
-for(var i = 1 ; i <=instrumentsNum; i++ ){
-    if(favInstrument === 'guitar'){
-        image = image + '<img src="images/guitar.png"/>';
-    }else if(favInstrument === 'piano'){
-        image = image + '<img src="images/piano.jpg"/>';
-    }
+// for(var i = 1 ; i <=instrumentsNum; i++ ){
+//     if(favInstrument === 'guitar'){
+//         image = image + '<img src="images/guitar.png"/>';
+//     }else if(favInstrument === 'piano'){
+//         image = image + '<img src="images/piano.jpg"/>';
+//     }
+// }
+// console.log(image);
+// document.write(image); // to show the image!
+/*
+Functions: A block of code that does something.
+we use it to break our code into smaller parts and for reusability
+2 ways of writing them:
+1)function declaration:
+function funcName(Parameters){
+    code that will run when we call the function
 }
-console.log(image);
-document.write(image); // to show the image!
+this is how you invoke(call) a function:
+funcName(Arguments)
+2)function expression:
+var funcName= function(Parameters){
+    code that will run when we call the function
+}
+funcName(arguments)
+*/
+
+
+function welcomeingMessage(userName){ // parameter
+    alert('Welcome User ' + userName )
+}
+welcomeingMessage('Bashar'); // arguemnt -> the value for the parameter
+
+var age = prompt('whats your date of birth?');
+// 1995
+var user = 'Bashar';
+function calculateAge(year){
+    // var anotherUser = 'Jana';
+    var userAge = 2021 - year;
+}
+
+// console.log(anotherUser);
+
+calculateAge(age); // 1995
+
+
+function square(number){
+    var sqauareCalc = number * number;
+    return sqauareCalc;
+
+}
+
+console.log(square(7));
+
+
+var getAge = function(year){
+    var calc = 2021 - year
+    return calc;
+}
+
+var age = prompt('whats your age?');
+// 28
+function userAge(userAge ){
+    if(userAge >= 18 && userAge < 35){
+        alert('Welcome to my website!')
+    
+    }else if(userAge < 18 || userAge > 35){
+        alert('Sorry your not allowed!')
+
+    }else{
+        alert('Have a nice day!')
+    }
+    return userAge;
+}
+
+console.log(userAge(age));// the function wont run unless we call it
