@@ -316,22 +316,6 @@ gettingPassword()
 // }
 // console.log(image);
 // document.write(image); // to show the image!
-/*
-Functions: A block of code that does something.
-we use it to break our code into smaller parts and for reusability
-2 ways of writing them:
-1)function declaration:
-function funcName(Parameters){
-    code that will run when we call the function
-}
-this is how you invoke(call) a function:
-funcName(Arguments)
-2)function expression:
-var funcName= function(Parameters){
-    code that will run when we call the function
-}
-funcName(arguments)
-*/
 
 
 function welcomeingMessage(userName){ // parameter
